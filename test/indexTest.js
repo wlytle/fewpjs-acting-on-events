@@ -1,35 +1,35 @@
-describe('moveDodgerLeft()', () => {
+describe("moveDodgerLeft()", () => {
   beforeEach(() => {
-    dodger = document.getElementById('dodger')
-  })
+    dodger = document.getElementById("dodger");
+  });
 
-  it('moves the DODGER to the left', () => {
-    var left = dodger.style.left
-    left = parseInt(left)
+  it("moves the DODGER to the left", () => {
+    var left = dodger.style.left;
+    left = parseInt(left);
 
-    moveDodgerLeft()
+    moveDodgerLeft();
 
-    var newPosition = dodger.style.left
-    newPosition = parseInt(newPosition)
+    var newPosition = dodger.style.left;
+    newPosition = parseInt(newPosition);
 
-    expect(newPosition).to.be.below(left)
-  })
-})
+    expect(newPosition).to.be.below(left);
+  });
+});
 
-describe('moveDodgerRight', () => {
+describe("moveDodgerRight()", () => {
   beforeEach(() => {
-    dodger = document.getElementById('dodger')
-  })
+    dodger = document.getElementById("dodger");
+  });
 
-  it('moves the DODGER to the right', () => {
-    var left = dodger.style.left
-    left = parseInt(left)
+  it("moves the DODGER to the right", () => {
+    var left = dodger.style.left;
+    left = parseInt(left);
 
-    moveDodgerRight()
+    moveDodgerRight();
 
-    var newPosition = dodger.style.left
-    newPosition = parseInt(newPosition)
+    var newPosition = dodger.style.left;
+    newPosition = parseInt(newPosition);
 
-    expect(newPosition).to.be.above(left)
-  })
-})
+    expect(newPosition).to.be.above(left);
+  });
+});
